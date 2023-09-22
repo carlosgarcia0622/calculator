@@ -22,13 +22,13 @@ describe('AppController', () => {
 
   describe('square', () => {
     it('should return square for the number', () => {
-      expect(appController.square('5')).toBe("El cuadrado de 5 es 25");
+      expect(appController.square('5')).toBe('El cuadrado de 5 es 25');
     });
   });
 
   describe('cube', () => {
     it('should return cube for the number', () => {
-      expect(appController.cube('5')).toBe("El cubo de 5 es 125");
+      expect(appController.cube('5')).toBe('El cubo de 5 es 125');
     });
   });
 });

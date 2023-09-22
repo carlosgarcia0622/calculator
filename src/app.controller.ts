@@ -13,12 +13,12 @@ export class AppController {
   @Get('square/:number')
   square(@Param('number') number: string): string {
     const result = this.appService.getSquare(number);
-    return (`El cuadrado de ${number} es ${result}`);
+    return `El cuadrado de ${number} es ${result}`;
   }
 
   @Get('cube/:number')
   cube(@Param('number') number: string): string {
     const numberInt = parseInt(number);
-    return (`El cubo de ${number} es ${numberInt*numberInt*numberInt}`);
+    return `El cubo de ${number} es ${numberInt * numberInt * numberInt}`;
   }
 }
